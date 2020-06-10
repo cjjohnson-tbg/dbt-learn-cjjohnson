@@ -33,3 +33,13 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
+  - name: orders
+    description: one entry per order (for lack of anthying else here...)
+    columns:
+      - name : order_id
+        description: must be unique
+        tests:
+          - unique
+          - not_null
+      - name: amount
+        description: sum of all payments that are marked as 'success'
