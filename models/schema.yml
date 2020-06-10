@@ -40,7 +40,6 @@ models:
         description: must be unique
         tests:
           - unique
-          - not null
+          - not_null
       - name: amount
         description: sum of all payments that are marked as 'success'
-        
