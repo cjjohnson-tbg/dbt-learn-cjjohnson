@@ -34,7 +34,7 @@ models:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
   - name: orders
-    description: one entry per order (for lack of anthying else here...)
+    description: "{{ doc('orders') }}"
     columns:
       - name : order_id
         description: must be unique

@@ -11,5 +11,6 @@ sources:
   - name: stripe
     database : raw
     schema : stripe
+    description : '{{ doc("sources_stripe") }}'
     tables:
       - name: payment
